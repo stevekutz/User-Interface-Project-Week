@@ -299,16 +299,24 @@ body {
   font-size: 10rem;
   max-width: 80rem;
 }
-.homeJumboIMG {
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.main-container .homeJumboIMG {
   max-width: 88rem;
   width: 100%;
   top: 0;
 }
-header {
+.main-container header {
   border: 5px solid forestgreen;
   overflow: hidden;
 }
-#tagline {
+.main-container #tagline {
   border: 1px solid deeppink;
   font-weight: bold;
   font-size: 3rem;
