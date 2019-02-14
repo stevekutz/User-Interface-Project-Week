@@ -1,6 +1,5 @@
 
 .menu-container{
-  .b_dp();
   background-color: @navbackground;
    margin: 0 auto;
    max-width: 88rem;
@@ -11,69 +10,46 @@
     width: 100%;
     position: fixed;
     padding: 0 5%;
-    z-index: 2;
+    z-index: 5;
     top: 0;
-    .b_fg();
     .flex-row();
     background-color: @navbackground;
-   // position: fixed;
-  //  max-width: 88rem;
-  //  margin: 0 auto;
 
     .menu-title{
       .NavLogo();
-
     }
 
     .menu-control{
       cursor: pointer;
-
-
-      // toggle BOTH on click
-        .open{
-          display: block;
-        }
-      // .burger, .x_char {
-
-
-        .closed{
-          display: none;
-        }
-
-
-
-
-
+      .open{
+        display: block;
+      }
+      .closed{
+        display: none;
+      }
     }
-
   }  // end menu-header
+
   .menu-content{
     display: block;
     position: fixed;
-   // width: 75%;
     background-color: @navbackground;
     .flex-col();
     justify-content: center;
      height: 100%;
 
-
-    z-index: 3;
+    z-index: 5;
     top: 40px;
     max-width: 880px;
     width: 100%;
 
-
     .menu-item{
     .flex-col();
-     .b_fg();
      .NavText();
       &:hover{
         color: @color;
       }
-
-
     }
-
 
   }
   .hidden {
@@ -88,7 +64,7 @@
 }
 
 .fill {
-  .b_rb();
+  top: 40px;
   font-size: 10rem;
   max-width: 80rem;
 }

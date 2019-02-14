@@ -144,7 +144,7 @@ table {
   border: 1px solid deeppink;
 }
 .b_fg {
-  border: 1px solid forestgreen;
+  border: 5px solid forestgreen;
 }
 .flex-row {
   display: flex;
@@ -161,25 +161,15 @@ table {
   align-content: center;
   flex-wrap: wrap;
 }
-.fw {
+.genText {
   font-weight: normal;
-}
-.fs {
   font-size: 1.6rem;
-}
-.lh {
   line-height: 2.4rem;
 }
-.Jumbo_fwBold {
+.JumboHeader {
   font-weight: bold;
-}
-.Jumbo_fs {
-  font-size: 6.4rem;
-}
-.Jumbo_lh {
-  line-height: 7.5rem;
-}
-.Jumbo_color {
+  font-size: 3rem;
+  line-height: 4rem;
   color: #FFFFFF;
 }
 .SH_fw {
@@ -205,7 +195,7 @@ table {
 }
 .NavLogo {
   font-weight: bold;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #FFFFFF;
 }
 .NavText {
@@ -224,8 +214,13 @@ body {
   background-color: lightblue;
   width: 100%;
 }
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 62.5%;
+}
 .menu-container {
-  border: 1px solid deeppink;
   background-color: #99A5AF;
   margin: 0 auto;
   max-width: 88rem;
@@ -236,9 +231,8 @@ body {
   width: 100%;
   position: fixed;
   padding: 0 5%;
-  z-index: 2;
+  z-index: 5;
   top: 0;
-  border: 1px solid forestgreen;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -248,7 +242,7 @@ body {
 }
 .menu-container .menu-header .menu-title {
   font-weight: bold;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #FFFFFF;
 }
 .menu-container .menu-header .menu-control {
@@ -272,7 +266,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   height: 100%;
-  z-index: 3;
+  z-index: 5;
   top: 40px;
   max-width: 880px;
   width: 100%;
@@ -284,7 +278,6 @@ body {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  border: 1px solid forestgreen;
   font-weight: bold;
   font-size: 3.2rem;
   line-height: 4rem;
@@ -302,13 +295,28 @@ body {
   width: 100%;
 }
 .fill {
-  border: 1px solid rebeccapurple;
+  top: 40px;
   font-size: 10rem;
   max-width: 80rem;
 }
-* {
-  box-sizing: border-box;
+.homeJumboIMG {
+  max-width: 88rem;
+  width: 100%;
+  top: 0;
 }
-body {
-  font-size: 62.5%;
+header {
+  border: 5px solid forestgreen;
+  overflow: hidden;
+}
+#tagline {
+  border: 1px solid deeppink;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #FFFFFF;
+  max-width: 150px;
+  position: relative;
+  left: 10%;
+  top: -250px;
+  z-index: 3;
 }
