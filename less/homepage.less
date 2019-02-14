@@ -1,6 +1,8 @@
 .main-container{
-  .flex-col();
+  border: 5px solid black;
+  height: auto;
 
+  .flex-col();
 
   .homeJumboIMG{
     max-width: 88rem;
@@ -13,17 +15,24 @@
     //  max-height: 35rem;
     //  height: 100%;
     overflow: hidden;
+    max-height: 520px;
+    height: 100%;
   }
 
   #tagline{
     .b_dp();
     .JumboHeader();
+   // font-size: 2px;    // SMALLER
+   // line-height: 2px;  // SMALLER
     max-width: 150px;
     position: relative;
     left: 10%;
-    top: -250px;
+    top: -250px;  // use with relative
+    //top: 50px;  // use with absolute
     z-index: 3;
+    overflow: hidden;
   }
+
 
 
 
