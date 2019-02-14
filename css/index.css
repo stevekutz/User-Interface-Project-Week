@@ -257,10 +257,11 @@ body {
 .menu-container .menu-header .menu-control .open {
   display: block;
 }
-.menu-container .menu-header .menu-control .close {
+.menu-container .menu-header .menu-control .closed {
   display: none;
 }
 .menu-container .menu-content {
+  display: block;
   position: fixed;
   background-color: #99A5AF;
   display: flex;
@@ -269,7 +270,12 @@ body {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   height: 100%;
+  z-index: 3;
+  top: 40px;
+  max-width: 880px;
+  width: 100%;
 }
 .menu-container .menu-content .menu-item {
   display: flex;
@@ -289,14 +295,16 @@ body {
   color: #222222;
 }
 .menu-container .hidden {
-  display: block;
+  display: none;
   z-index: 3;
   top: 40px;
   max-width: 880px;
   width: 100%;
 }
 .fill {
+  border: 1px solid rebeccapurple;
   font-size: 10rem;
+  max-width: 80rem;
 }
 * {
   box-sizing: border-box;

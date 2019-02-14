@@ -30,22 +30,38 @@
 
 
       // toggle BOTH on click
-      .open{
-        display: block;
-      }
+        .open{
+          display: block;
+        }
+      // .burger, .x_char {
 
-      .close{
-        display: none;
-      }
+
+        .closed{
+          display: none;
+        }
+
+
+
+
+
     }
 
   }  // end menu-header
   .menu-content{
+    display: block;
     position: fixed;
    // width: 75%;
     background-color: @navbackground;
     .flex-col();
+    justify-content: center;
      height: 100%;
+
+
+    z-index: 3;
+    top: 40px;
+    max-width: 880px;
+    width: 100%;
+
 
     .menu-item{
     .flex-col();
@@ -61,7 +77,7 @@
 
   }
   .hidden {
-    display: block;
+    display: none;
     z-index: 3;
     top: 40px;
     max-width: 880px;
@@ -72,7 +88,9 @@
 }
 
 .fill {
+  .b_rb();
   font-size: 10rem;
+  max-width: 80rem;
 }
 
 

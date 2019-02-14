@@ -1,29 +1,28 @@
 class Modal {
   constructor(menuAttr) {
-    this.modal = menuAttr;
-    console.log('inside Modal, we got ', this.modal);
+    this.modal = menuAttr; // just in case
+
 
     this.menu = document.querySelector('.menu-content');
-    console.log('menu-content is', this.menu)
-
-    this.openBtn = document.querySelector('.open');
-    this.closeBtn = document.querySelector('.close');
 
 
-    this.openBtn.addEventListener('click', () => this.toggleMenu());
+    this.openBtn = document.querySelector('.burger');
+
+    this.closeBtn = document.querySelector('.Xchar');
+
+
+    this.openBtn.addEventListener('click', () => this.toggleMenu() );
     this.closeBtn.addEventListener('click', () => this.toggleMenu());
 
   }
 
   toggleMenu() {
-      console.log('YOU don clicked here !!')
-
-
-
+    this.openBtn.classList.toggle('closed');
+    this.closeBtn.classList.toggle('closed');
+    this.menu.classList.toggle('hidden');
   }
 
 }
-
 
 const modals = document.querySelectorAll('.menu-content');
 console.log('modals is ', modals);
