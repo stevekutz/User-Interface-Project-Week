@@ -12,23 +12,20 @@
 
   header {
     .b_fg();
-    //  max-height: 35rem;
-    //  height: 100%;
+    height: 100%;
     overflow: hidden;
     max-height: 520px;
-    height: 100%;
+
+    position: relative; //  MUST BE HERE to make children position
   }
 
   #tagline{
     .b_dp();
     .JumboHeader();
-   // font-size: 2px;    // SMALLER
-   // line-height: 2px;  // SMALLER
-    max-width: 150px;
-    position: relative;
-    left: 10%;
-    top: -250px;  // use with relative
-    //top: 50px;  // use with absolute
+
+    position: absolute;  // MUST BE HERE to position relative to parent
+    left: 15%;
+    top: 25%;  // use with relative
     z-index: 3;
     overflow: hidden;
   }
