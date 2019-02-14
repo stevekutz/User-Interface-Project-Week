@@ -169,7 +169,7 @@ table {
 .JumboHeader {
   font-weight: bold;
   font-size: 3rem;
-  line-height: 4rem;
+  line-height: 3rem;
   color: #FFFFFF;
 }
 .SH_fw {
@@ -325,13 +325,16 @@ body {
   border: 4px solid deeppink;
   font-weight: bold;
   font-size: 3rem;
-  line-height: 4rem;
+  line-height: 3rem;
   color: #FFFFFF;
   position: absolute;
-  left: 15%;
-  top: 25%;
+  left: 10%;
+  top: 55%;
   z-index: 3;
   overflow: hidden;
+}
+.IMG_size::after {
+  content: '';
 }
 header .servicesJumboIMG {
   max-width: 88rem;
@@ -342,7 +345,7 @@ header #overText {
   border: 4px solid deeppink;
   font-weight: bold;
   font-size: 3rem;
-  line-height: 4rem;
+  line-height: 3rem;
   color: #FFFFFF;
   position: absolute;
   top: 50px;

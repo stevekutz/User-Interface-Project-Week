@@ -25,7 +25,6 @@ class Modal {
 }
 
 const modals = document.querySelectorAll('.menu-content');
-console.log('modals is ', modals);
 
 [...modals].forEach(modalItem => new Modal(modalItem) );
 
