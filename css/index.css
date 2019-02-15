@@ -226,7 +226,6 @@ table {
 body {
   max-width: 880px;
   margin: 0 auto;
-  background-color: lightblue;
   width: 100%;
 }
 * {
@@ -316,7 +315,6 @@ body {
 }
 .main-container {
   height: auto;
-  border: 5px solid forestgreen;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -347,7 +345,6 @@ body {
   overflow: hidden;
 }
 .main-container .top {
-  border: 3px solid rebeccapurple;
   width: 90%;
 }
 .main-container .top .top-content {
@@ -405,8 +402,8 @@ body {
   order: 1;
 }
 .main-container .middle {
-  border: 4px solid deeppink;
   width: 90%;
+  margin-top: 2rem;
 }
 .main-container .middle .middle-h2 {
   font-weight: bold;
@@ -443,9 +440,10 @@ body {
   align-content: center;
   flex-wrap: wrap;
   margin: 1rem 0;
+  padding-bottom: 2rem;
 }
 .main-container .middle .middle-content .middle-text .middle-p {
-  width: 60%;
+  width: 50%;
   font-weight: normal;
   font-size: 1.15rem;
   line-height: 1.15rem;
@@ -456,6 +454,65 @@ body {
 }
 .main-container .middle .blockLeft .middleIMG .floatBLOCK {
   left: 0;
+}
+.main-container .footer {
+  background-color: #828282;
+  width: 100%;
+}
+.main-container .footer .footer-content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+}
+.main-container .footer .footer-content .email {
+  width: 30%;
+  padding: 2rem 0;
+  text-align: left;
+}
+.main-container .footer .footer-content .email .footer_bold {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.main-container .footer .footer-content .email .footerTXT {
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+.main-container .footer .footer-content .email .emailBTN {
+  font-size: 0.5rem;
+  color: #828282;
+  background-color: #FFFFFF;
+  text-align: left;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+}
+.main-container .footer .footer-content .offices {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.main-container .footer .footer-content .offices .location {
+  padding: 2rem 0;
+}
+.main-container .footer .footer-content .offices .location .footer_bold {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.main-container .footer .footer-content .offices .location .footerTXT {
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+.main-container .footer .copyright .footer_p {
+  color: white;
+  text-align: center;
+  font-size: 0.5rem;
 }
 header .servicesJumboIMG {
   max-width: 88rem;
