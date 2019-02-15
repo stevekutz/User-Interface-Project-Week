@@ -1,0 +1,64 @@
+.footer {
+  background-color: @footerBackground;
+  width: 100%;
+
+  .footer-content{
+    width: 90%;
+    margin: 0 auto;
+    .flex-row();
+    justify-content: space-between;
+
+    color: white;
+
+    .email {
+      width: 30%;
+      padding: 2rem 0;
+      text-align: left;
+
+      .footer_bold {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      .footerTXT {
+        font-size: .75rem;
+        font-weight: normal;
+      }
+
+      .emailBTN {
+        font-size: .5rem;
+        color: @footerBackground;
+        background-color: @background;
+        text-align: left;
+        padding: .5rem 0;
+        margin: .5rem 0;
+      }
+    }
+
+    .offices {
+      width: 60%;
+      .flex-row();
+      .location{
+        padding: 2rem 0;
+        .footer_bold{
+          font-weight: bold;
+          font-size: 1rem;
+        }
+        .footerTXT{
+          font-size: .75rem;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  .copyright{
+    .footer_p{
+      color: white;
+      text-align: center;
+      font-size: .5rem;
+      padding: 1rem 0;
+    }
+  }
+
+}

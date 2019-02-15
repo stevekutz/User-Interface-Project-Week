@@ -42,27 +42,58 @@
 
   .tabbed-content{
     .b_fg();
-    .flex-row();
+    .flex-col();
     .tabs-container{
       .b_db();
       width: 100%;
-      .flex-row();
+     .flex-row();
+      padding: 1rem 0;
+      .tab_BTN{
+        font-size: 1.25rem;
+        font-weight: bold;
+        border: 1px solid black;
+        padding: .5rem 1.25rem;
+      }
     }
     .tab-info{
       .b_rb();
-      .flex-row();
-      .tab-text{
-        .b_fg();
-        width: 50%;
-        .flex-col();
-      }
-      .tabIMG{
-        width: 50%;
-        img{
-          max-width: 480px;
-          width: 100%;
+      .flex-col();
+      margin: 2rem 0;
+
+      .tab_h2{
+        width: 100%;
+        .b_dp();
+        font-size: 2rem;
+        font-weight: bold;
+         text-align: left;
+       }
+
+      .tab-data{
+        .b_db();
+        .flex-row();
+        .tab-text{
+          .b_fg();
+          width: 50%;
+          .flex-col();
+
+          .tab_p{
+            .genText();
+            padding: .5rem 0;
+          }
+
         }
+        .tabIMG{
+          width: 50%;
+          img{
+            max-width: 480px;
+            width: 100%;
+          }
+        }
+
+
       }
+
+
     }
 
 
