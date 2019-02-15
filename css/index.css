@@ -300,7 +300,6 @@ body {
   max-width: 80rem;
 }
 .main-container {
-  border: 5px solid black;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -322,7 +321,6 @@ body {
   position: relative;
 }
 .main-container #tagline {
-  border: 4px solid deeppink;
   font-weight: bold;
   font-size: 3rem;
   line-height: 3rem;
