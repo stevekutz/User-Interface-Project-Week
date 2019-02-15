@@ -8,14 +8,9 @@
 const slogan = document.querySelectorAll('#tagline');
 const jumboIMG = document.querySelectorAll('.homeJumboIMG');
 
-
-const IMG_size = document.querySelector('.IMG_size');
-const h1_size = document.querySelector('.h1_size');
-const h1_fontSize = document.querySelector('.h1_fontSize');
-const h1_lh = document.querySelector('.h1_lh');
-
 window.addEventListener('resize', () =>   {
 
+  console.log('RESIZING');
   const img_height = jumboIMG[0].height;
   const slogan_fontSize = (img_height * .096).toString() + 'px';
 

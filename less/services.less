@@ -1,25 +1,80 @@
 
 
-header{
-  .servicesJumboIMG{
-    max-width: 88rem;
-    width: 100%;
-    top: 0;
+.services-container{
+  .b_rb();
+
+
+  header{
+    position: relative;
+
+    .servicesJumboIMG{
+      max-width: 88rem;
+      width: 100%;
+
+    }
+
+    #overText {
+      .JumboHeader();
+      position: absolute;  // MUST BE HERE to position relative to parent
+      left: 10%;
+      top: 55%;  // use with relative
+      z-index: 3;
+      overflow: hidden;
+    }
+
   }
 
-  #overText {
-    .b_dp();
-    .JumboHeader();
-    position: absolute;
-    top: 50px;
+  .services-content{
+    .flex-col();
+    width: 90%;
+    margin: 0 auto;
+    .topContent {
+      .b_dp();
+
+      .services-text{
+        .genText();
+      }
+
+    }
+
+
+  }  // end services-content
+
+  .tabbed-content{
+    .b_fg();
+    .flex-row();
+    .tabs-container{
+      .b_db();
+      width: 100%;
+      .flex-row();
+    }
+    .tab-info{
+      .b_rb();
+      .flex-row();
+      .tab-text{
+        .b_fg();
+        width: 50%;
+        .flex-col();
+      }
+      .tabIMG{
+        width: 50%;
+        img{
+          max-width: 480px;
+          width: 100%;
+        }
+      }
+    }
+
+
+
+
   }
 
-}
 
-.topContent {
-  .b_dp();
-  .genText();
-}
+
+} // end services-container
+
+
 
 
 
