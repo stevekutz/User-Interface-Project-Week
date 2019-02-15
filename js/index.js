@@ -1,10 +1,9 @@
 // JS goes here
 
 
-
+///////////////////////////////////////////////////////////////////////////////////
 //  the following dynamically modifies tagline text to resize with window and
 //  maintain positioning
-
 
 const slogan = document.querySelectorAll('#tagline');
 const jumboIMG = document.querySelectorAll('.homeJumboIMG');
@@ -32,4 +31,6 @@ window.addEventListener('resize', () =>   {
 
 });
 
+///////////////////////////////////////////////////////////////////////////////////
+//
 

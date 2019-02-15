@@ -1,6 +1,6 @@
 .main-container{
   height: auto;
-
+  .b_fg();
   .flex-col();
 
   .homeJumboIMG{
@@ -10,7 +10,6 @@
   }
 
   header {
-    .b_fg();
     height: 100%;
     overflow: hidden;
     max-height: 520px;
@@ -28,11 +27,67 @@
     overflow: hidden;
   }
 
+  .top{
+    .b_rb();
+    width: 90%;
 
-}
+    .top-content{
+      .flex-row();
+      padding: 2rem 0;
+      .top-text{
+        .background();
+        padding: 1rem;
+        width: 50%;
+        .top-h2{
+          .subHeader();
+        }
+        .top-p{
+          .genText();
+        }
+        .learnMore{
+          .genText();
+          border: 1px solid black;
+          margin: 1rem;
+          width: 40%;
+          text-align: center;
+        }
+      }
+
+      .topIMG{
+        width: 50%;
+        img{
+          max-width: 410px;
+          width: 100%;
+        }
+      }
 
 
-.IMG_size::after{
-  content: '';
+    }  // end top-content
+
+    .imgRight{
+      .top-text{
+        order: 1;
+      }
+      .topIMG{
+        order: 2;
+      }
+    }
+
+    .imgLeft {
+      .top-text{
+        order: 2;
+      }
+      .topIMG{
+        order: 1;
+      }
+    }
+
+
+
+  }  // end top
+
+
+
+
 }
 
