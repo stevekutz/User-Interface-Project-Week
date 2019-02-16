@@ -491,6 +491,9 @@ body {
   padding: 1rem;
   padding-left: 0;
 }
+.main-container .middle .middle-content {
+  border: 3px solid rebeccapurple;
+}
 .main-container .middle .middle-content .middleIMG {
   padding: 1rem 0;
   position: relative;
@@ -509,22 +512,26 @@ body {
 }
 @media (max-width: 500px) {
   .main-container .middle .middle-content .middleIMG .mob500 {
+    border: 5px solid forestgreen;
     display: block;
-    max-width: 420px;
+    max-width: 100%;
     width: 100%;
   }
 }
 .main-container .middle .middle-content .middleIMG .floatBLOCK {
+  position: absolute;
+  bottom: -0.5rem;
+  width: 25%;
+}
+.main-container .middle .middle-content .middleIMG .floatBLOCK .floatBLOCK_p {
+  border: 4px solid deeppink;
   font-weight: normal;
   font-size: 1.15rem;
   line-height: 1.15rem;
   padding: 1rem;
   background-color: #D8D8D8;
-  padding: 1rem 2rem;
-  width: 25%;
+  padding: 1rem 0;
   text-align: center;
-  position: absolute;
-  bottom: -0.5rem;
 }
 @media (max-width: 500px) {
   .main-container .middle .middle-content .middleIMG .floatBLOCK {
@@ -560,8 +567,10 @@ body {
 }
 @media (max-width: 500px) {
   .main-container .middle .blockRight .middleIMG .floatBLOCK {
-    left: 2.5%;
-    right: 2.5%;
+    left: 0;
+    right: 0;
+    width: auto;
+    padding: 0 2.5%;
   }
 }
 .main-container .middle .blockLeft .middleIMG .floatBLOCK {
@@ -569,8 +578,10 @@ body {
 }
 @media (max-width: 500px) {
   .main-container .middle .blockLeft .middleIMG .floatBLOCK {
-    left: 2.5%;
-    right: 2.5%;
+    left: 0;
+    right: 0;
+    width: auto;
+    padding: 0 2.5%;
   }
 }
 .footer {

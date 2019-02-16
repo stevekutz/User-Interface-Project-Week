@@ -137,6 +137,7 @@
       padding-left: 0;
     }
     .middle-content{
+      .b_rb();
 
       .middleIMG{
         padding: 1rem 0;
@@ -151,8 +152,9 @@
         .mob500{
           display: none;
           @media @mob500 {
+            .b_fg();
             display: block;
-            max-width: 420px;
+            max-width: 100%;
             width: 100%;
           }
 
@@ -161,13 +163,17 @@
 
 
         .floatBLOCK{
-          .genText();
-          background-color: @recentProjectsGraysquare;
-          padding: 1rem 2rem;
-          width: 25%;
-          text-align: center;
           position: absolute;   // MUST BE IN CHILD
           bottom: -.5rem;
+          width: 25%;
+          .floatBLOCK_p{
+            .b_dp();
+            .genText();
+            background-color: @recentProjectsGraysquare;
+            padding: 1rem 0;
+
+            text-align: center;
+          }
           @media @mob500 {
             width: 95%;
 
@@ -197,16 +203,20 @@
     .blockRight .middleIMG .floatBLOCK{
       right: 0;
       @media @mob500 {
-        left: 2.5%;
-        right: 2.5%;
+        left: 0;
+        right: 0;
+        width: auto;
+        padding: 0 2.5%;
       }
     }
 
     .blockLeft .middleIMG .floatBLOCK{
       left: 0;
-      @media @mob500 {
-        left: 2.5%;
-        right: 2.5%;
+      @media @mob500{
+        left: 0;
+        right: 0;
+        width: auto;
+        padding: 0 2.5%;
       }
 
     }
