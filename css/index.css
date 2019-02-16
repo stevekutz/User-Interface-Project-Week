@@ -146,6 +146,12 @@ table {
 .b_fg {
   border: 5px solid forestgreen;
 }
+.debug_elem .IMG_size,
+.debug_elem .h1_size,
+.debug_elem .h1_fontSize,
+.debug_elem .h1_lh {
+  font-size: 2rem;
+}
 .flex-row {
   display: flex;
   justify-content: space-between;
@@ -313,6 +319,12 @@ body {
   font-size: 10rem;
   max-width: 80rem;
 }
+.debug_var .IMG_size,
+.debug_var .h1_size,
+.debug_var .h1_fontSize,
+.debug_var .h1_lh {
+  font-size: 2rem;
+}
 .main-container {
   height: auto;
   display: flex;
@@ -321,6 +333,12 @@ body {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+  /*
+  // just for debugging
+  .IMG_size, .h1_size, .h1_fontSize, .h1_lh {
+    font-size: 2rem;
+  }
+  */
 }
 .main-container .homeJumboIMG {
   max-width: 88rem;
@@ -579,12 +597,6 @@ body {
     padding: 0 2.5%;
   }
 }
-.main-container .IMG_size,
-.main-container .h1_size,
-.main-container .h1_fontSize,
-.main-container .h1_lh {
-  font-size: 2rem;
-}
 .footer {
   background-color: #828282;
   width: 100%;
@@ -645,7 +657,7 @@ body {
   color: #828282;
   background-color: #FFFFFF;
   text-align: left;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
   margin: 0.5rem 0;
 }
 @media (max-width: 500px) {

@@ -13,8 +13,7 @@ const h1_fontSize = document.querySelector('.h1_fontSize');
 const h1_lh = document.querySelector('.h1_lh');
 */
 
-
-let resizeFloatText = () => {
+const resizeFloatText = () => {
 
   const text = document.querySelectorAll('#overText');
   const IMG = document.querySelectorAll('.servicesJumboIMG');
@@ -28,9 +27,7 @@ let resizeFloatText = () => {
 
 };
 
-
 window.addEventListener('resize', () => resizeFloatText() );
-
 window.addEventListener('load', () =>  resizeFloatText() );
 
 
@@ -109,9 +106,6 @@ class ButtonInfo {
 
 
        this.buttonInfo.classList.toggle('active');
-
-
- ;
 
   }
 
