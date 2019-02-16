@@ -7,22 +7,35 @@
     margin: 0 auto;
     .flex-row();
     justify-content: space-between;
-
     color: white;
-
+    @media @mob500 {
+    .flex-col();
+    width: 90%;
+  }
     .email {
       width: 30%;
       padding: 2rem 0;
       text-align: left;
+      @media @mob500 {
+        width: 100%;
+        font-size: 1rem;
+      }
 
       .footer_bold {
         font-size: 1rem;
         font-weight: bold;
+        @media @mob500 {
+          width: 100%;
+          font-size: 1.75rem;
+        }
       }
 
       .footerTXT {
         font-size: .75rem;
         font-weight: normal;
+        @media @mob500 {
+          width: 95%;
+        }
       }
 
       .emailBTN {
@@ -32,14 +45,27 @@
         text-align: left;
         padding: .5rem 0;
         margin: .5rem 0;
+        @media @mob500 {
+          font-size: 1rem;
+        }
+
       }
     }
 
     .offices {
       width: 60%;
       .flex-row();
+      @media @mob500 {
+        .flex-col();
+        width: 100%;
+      }
       .location{
         padding: 2rem 0;
+        @media @mob500 {
+          width: 100%;
+          margin: 0;
+          padding: .5rem 0;
+        }
         .footer_bold{
           font-weight: bold;
           font-size: 1rem;
@@ -47,6 +73,9 @@
         .footerTXT{
           font-size: .75rem;
           font-weight: normal;
+          @media @mob500 {
+            line-height: 1.25rem;
+          }
         }
       }
     }
@@ -58,6 +87,11 @@
       text-align: center;
       font-size: .5rem;
       padding: 1rem 0;
+      @media @mob500{
+        text-align: left;
+        width: 90%;
+        margin: 0 auto;
+      }
     }
   }
 
