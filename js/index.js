@@ -1,31 +1,44 @@
 // JS goes here
 
 
-///////////////////////////////////////////////////////////////////////////////////
-//  the following dynamically modifies tagline text to resize with window and
-//  maintain positioning
+/*
+  // THIS IS FOR DEBUGGING - variables are for resizing
+  //                       - will display value in debugging elements
+const IMG_size = document.querySelector('.IMG_size');
+const h1_size = document.querySelector('.h1_size');
+const h1_fontSize = document.querySelector('.h1_fontSize');
+const h1_lh = document.querySelector('.h1_lh');
 
-const slogan = document.querySelectorAll('#tagline');
-const jumboIMG = document.querySelectorAll('.homeJumboIMG');
-
-window.addEventListener('resize', () =>   {
-
-  console.log('RESIZING');
-  const img_height = jumboIMG[0].height;
-  const slogan_fontSize = (img_height * .096).toString() + 'px';
-
-  slogan[0].style.fontSize = slogan_fontSize;
-  slogan[0].style.lineHeight = slogan_fontSize;
-
-/*    THIS IS FOR DEBUGGING, will make values show up on main page on resize
+   // THIS IS FOR DEBUGGING, will make values show up on main page on resize
   IMG_size.textContent = `jumboIMG height is ${jumboIMG[0].height}`;
   h1_size.textContent = `slogan height is ${slogan[0].clientHeight}`;
   h1_fontSize.textContent = `slogan font size is ${slogan[0].style.fontSize.toString()}`;
   h1_lh.textContent = `slogan line height is ${slogan[0].style.lineHeight}`;
 */
 
-});
+
 
 ///////////////////////////////////////////////////////////////////////////////////
-//
+//  the following dynamically modifies tagline text to resize with window and
+//  maintain positioning
 
+
+
+
+let resizeFloatText = () => {
+
+  const slogan = document.querySelectorAll('#tagline');
+  const jumboIMG = document.querySelectorAll('.homeJumboIMG');
+
+  const img_height = jumboIMG[0].height;
+  const slogan_fontSize = (img_height * .096).toString() + 'px';
+
+  slogan[0].style.fontSize = slogan_fontSize;
+  slogan[0].style.lineHeight = slogan_fontSize;
+  slogan[0].style.display = 'block';
+
+};
+
+window.addEventListener('resize', () => resizeFloatText() );
+
+window.addEventListener('load', () =>  resizeFloatText() );

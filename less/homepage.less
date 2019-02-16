@@ -18,7 +18,8 @@
     left: 10%;
     top: 55%;  // use with relative
     z-index: 3;
-    overflow: hidden;
+   // overflow: hidden;
+    display: none;
   }
 
   .top{
@@ -137,8 +138,6 @@
       padding-left: 0;
     }
     .middle-content{
-      .b_rb();
-
       .middleIMG{
         padding: 1rem 0;
         position: relative;   // MUST BE IN PARENT
@@ -152,7 +151,6 @@
         .mob500{
           display: none;
           @media @mob500 {
-            .b_fg();
             display: block;
             max-width: 100%;
             width: 100%;
@@ -167,7 +165,6 @@
           bottom: -.5rem;
           width: 25%;
           .floatBLOCK_p{
-            .b_dp();
             .genText();
             background-color: @recentProjectsGraysquare;
             padding: 1rem 0;
@@ -205,8 +202,8 @@
       @media @mob500 {
         left: 0;
         right: 0;
-        width: auto;
-        padding: 0 2.5%;
+        width: auto;  // takes 100% space
+        padding: 0 2.5%; // centers nicely
       }
     }
 
@@ -221,6 +218,13 @@
 
     }
   }  // end middle
+
+  // just for debugging
+  .IMG_size, .h1_size, .h1_fontSize, .h1_lh {
+    font-size: 2rem;
+  }
+
+
 
 
 }
