@@ -16,7 +16,7 @@
     #overText {
       .JumboHeader();
       position: absolute;  // MUST BE HERE to position relative to parent
-      left: 10%;
+      left: 6%;
       top: 55%;  // use with relative
       z-index: 3;
       overflow: hidden;
@@ -33,6 +33,7 @@
 
       .services-text{
         .genText();
+        padding: 1rem 0;
       }
 
     }
@@ -41,35 +42,41 @@
   }  // end services-content
 
   .tabbed-content{
-    .b_fg();
+  //  .b_fg();
     .flex-col();
-    .tabs-container{
+    .tab_BTN-container{
       .b_db();
       width: 100%;
      .flex-row();
       padding: 1rem 0;
       .tab_BTN{
+        text-align: center;
         font-size: 1.25rem;
         font-weight: bold;
         border: 1px solid black;
-        padding: .5rem 1.25rem;
+        padding: .5rem .25rem;
+        &:hover{
+          color: white;
+          background-color: #5E9FB9;
+        }
       }
     }
     .tab-info{
       .b_rb();
       .flex-col();
       margin: 2rem 0;
+      display: none;
 
       .tab_h2{
         width: 100%;
-        .b_dp();
+     //   .b_dp();
         font-size: 2rem;
         font-weight: bold;
          text-align: left;
        }
 
       .tab-data{
-        .b_db();
+     //   .b_db();
         .flex-row();
         .tab-text{
           .b_fg();
@@ -80,8 +87,8 @@
             .genText();
             padding: .5rem 0;
           }
-
         }
+
         .tabIMG{
           width: 50%;
           img{
@@ -90,13 +97,15 @@
           }
         }
 
-
       }
 
 
+    } // end of tab-info
+
+    .active {
+      display: block;
+
     }
-
-
 
 
   }
