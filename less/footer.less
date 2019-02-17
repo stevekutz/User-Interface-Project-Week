@@ -3,17 +3,19 @@
   width: 100%;
 
   .footer-content{
-    width: 90%;
+    .b_fg();
+    width: 95%;
     margin: 0 auto;
     .flex-row();
     justify-content: space-between;
     color: white;
     @media @mob500 {
     .flex-col();
-    width: 90%;
+    width: 95%;
   }
     .email {
-      width: 30%;
+      .b_rb();
+      width: 35%;
       padding: 2rem 0;
       text-align: left;
       @media @mob500 {
@@ -22,11 +24,12 @@
       }
 
       .footer_bold {
-        font-size: 1rem;
+        font-size: 1.15rem;
+        line-height: 1.5rem;
         font-weight: bold;
         @media @mob500 {
           width: 100%;
-          font-size: 1.75rem;
+       //   font-size: 1rem;
         }
       }
 
@@ -34,7 +37,9 @@
         font-size: .75rem;
         font-weight: normal;
         @media @mob500 {
+          font-size: 5.25rem;
           width: 95%;
+
         }
       }
 
@@ -55,6 +60,7 @@
     .offices {
       width: 60%;
       .flex-row();
+      font-size: 1.15rem;
       @media @mob500 {
         .flex-col();
         width: 100%;
@@ -68,7 +74,7 @@
         }
         .footer_bold{
           font-weight: bold;
-          font-size: 1rem;
+          font-size: 1.25rem;
         }
         .footerTXT{
           font-size: .75rem;

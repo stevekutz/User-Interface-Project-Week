@@ -625,7 +625,8 @@ body {
   width: 100%;
 }
 .footer .footer-content {
-  width: 90%;
+  border: 5px solid forestgreen;
+  width: 95%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -642,11 +643,12 @@ body {
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    width: 90%;
+    width: 95%;
   }
 }
 .footer .footer-content .email {
-  width: 30%;
+  border: 3px solid rebeccapurple;
+  width: 35%;
   padding: 2rem 0;
   text-align: left;
 }
@@ -657,13 +659,13 @@ body {
   }
 }
 .footer .footer-content .email .footer_bold {
-  font-size: 1rem;
+  font-size: 1.15rem;
+  line-height: 1.5rem;
   font-weight: bold;
 }
 @media (max-width: 500px) {
   .footer .footer-content .email .footer_bold {
     width: 100%;
-    font-size: 1.75rem;
   }
 }
 .footer .footer-content .email .footerTXT {
@@ -672,6 +674,7 @@ body {
 }
 @media (max-width: 500px) {
   .footer .footer-content .email .footerTXT {
+    font-size: 5.25rem;
     width: 95%;
   }
 }
@@ -695,6 +698,7 @@ body {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+  font-size: 1.15rem;
 }
 @media (max-width: 500px) {
   .footer .footer-content .offices {
@@ -719,7 +723,7 @@ body {
 }
 .footer .footer-content .offices .location .footer_bold {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 .footer .footer-content .offices .location .footerTXT {
   font-size: 0.75rem;
