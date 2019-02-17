@@ -334,12 +334,6 @@ body {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  /*
-  // just for debugging
-  .IMG_size, .h1_size, .h1_fontSize, .h1_lh {
-    font-size: 2rem;
-  }
-  */
 }
 .main-container header {
   width: 100%;
@@ -619,6 +613,12 @@ body {
     width: auto;
     padding: 0 2.5%;
   }
+}
+.main-container .IMG_size,
+.main-container .h1_size,
+.main-container .h1_fontSize,
+.main-container .h1_lh {
+  font-size: 2rem;
 }
 .footer {
   background-color: #828282;
@@ -921,6 +921,12 @@ body {
 }
 .services-container .tabbed-content .active {
   display: block;
+}
+.services-container .IMG_size,
+.services-container .h1_size,
+.services-container .h1_fontSize,
+.services-container .h1_lh {
+  font-size: 2rem;
 }
 .contact-container header {
   position: relative;
