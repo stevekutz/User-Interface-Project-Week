@@ -1,8 +1,6 @@
 
 
 .services-container{
-  .b_rb();
-
 
   header{
     position: relative;
@@ -31,25 +29,22 @@
       left: 6%;
       top: 55%;  // use with relative
       z-index: 3;
-     // overflow: hidden;
       display: none;
       @media @mob500 {
         top: 70%;
       }
     }
 
-  }
+  } // end header
 
   .services-content{
     .flex-col();
     width: 90%;
     margin: 0 auto;
     .topContent {
-      .b_dp();
-
       .services-text{
         .genText();
-        padding: 1rem 0;
+        padding: 2rem 0;
       }
 
     }
@@ -58,12 +53,10 @@
   }  // end services-content
 
   .tabbed-content{
-  //  .b_fg();
     .flex-col();
     .tab_BTN-container{
-      .b_db();
       width: 100%;
-     .flex-row();
+      .flex-row();
       padding: 1rem 0;
       .tab_BTN{
         text-align: center;
@@ -75,27 +68,39 @@
           color: white;
           background-color: #5E9FB9;
         }
-      }
-    }
+        @media @mob500 {
+          width: 100%;
+          padding: .75rem 0;
+          margin: .5rem 0;
+        }
+      } // end tab_BTN
+
+      @media @mob500 {
+       .flex-col();
+
+
+     }
+
+
+    } // end tab_BTN_container
+
+
+
     .tab-info{
-      .b_rb();
       .flex-col();
       margin: 2rem 0;
       display: none;
 
       .tab_h2{
         width: 100%;
-     //   .b_dp();
         font-size: 2rem;
         font-weight: bold;
          text-align: left;
        }
 
       .tab-data{
-     //   .b_db();
         .flex-row();
         .tab-text{
-          .b_fg();
           width: 50%;
           .flex-col();
 
@@ -103,13 +108,30 @@
             .genText();
             padding: .5rem 0;
           }
+          @media @mob500 {
+            width: 100%;
+          }
         }
 
         .tabIMG{
           width: 50%;
-          img{
+          @media @mob500 {
+            width: 100%;
+          }
+          .desktop{
             max-width: 480px;
             width: 100%;
+            @media @mob500 {
+              display: none;
+            }
+          }
+          .mobile{
+            display: none;
+            @media @mob500 {
+              max-width: 600px;
+              width: 100%;
+              display: block;
+            }
           }
         }
 
