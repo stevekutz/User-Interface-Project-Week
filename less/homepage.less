@@ -7,24 +7,45 @@
   height: auto;
   .flex-col();
 
-  .homeJumboIMG{
-    max-width: 88rem;
-    width: 100%;
-  }
+
 
   header {
+    width: 100%;
     position: relative; //  MUST BE HERE to make children position
+    .homeJumboIMG{
+      max-width: 88rem;
+      width: 100%;
+      @media @mob500{
+        display: none;
+      }
+
+
+    }
+    .homeJumboIMG_mobile{
+      display: none;
+      @media @mob500{
+        max-width: 500px;
+        width: 100%;
+        display: block;
+      }
+
+    }
+
+
   }
+
 
   #tagline{
     .JumboHeader();
-
     position: absolute;  // MUST BE HERE to position relative to parent
     left: 10%;
     top: 55%;  // use with relative
     z-index: 3;
-   // overflow: hidden;
     display: none;
+    @media @mob500{
+      top: 40%;
+      font-size: .25rem;
+    }
   }
 
   .top{

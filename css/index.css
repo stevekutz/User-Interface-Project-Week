@@ -341,12 +341,28 @@ body {
   }
   */
 }
-.main-container .homeJumboIMG {
+.main-container header {
+  width: 100%;
+  position: relative;
+}
+.main-container header .homeJumboIMG {
   max-width: 88rem;
   width: 100%;
 }
-.main-container header {
-  position: relative;
+@media (max-width: 500px) {
+  .main-container header .homeJumboIMG {
+    display: none;
+  }
+}
+.main-container header .homeJumboIMG_mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .main-container header .homeJumboIMG_mobile {
+    max-width: 500px;
+    width: 100%;
+    display: block;
+  }
 }
 .main-container #tagline {
   font-weight: bold;
@@ -358,6 +374,12 @@ body {
   top: 55%;
   z-index: 3;
   display: none;
+}
+@media (max-width: 500px) {
+  .main-container #tagline {
+    top: 40%;
+    font-size: 0.25rem;
+  }
 }
 .main-container .top {
   width: 90%;
@@ -726,10 +748,26 @@ body {
 }
 .services-container header {
   position: relative;
+  width: 100%;
 }
 .services-container header .servicesJumboIMG {
   max-width: 88rem;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .services-container header .servicesJumboIMG {
+    display: none;
+  }
+}
+.services-container header .servicesJumboIMG_mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .services-container header .servicesJumboIMG_mobile {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+  }
 }
 .services-container header #overText {
   font-weight: bold;
@@ -741,6 +779,11 @@ body {
   top: 55%;
   z-index: 3;
   display: none;
+}
+@media (max-width: 500px) {
+  .services-container header #overText {
+    top: 70%;
+  }
 }
 .services-container .services-content {
   display: flex;

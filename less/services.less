@@ -6,11 +6,23 @@
 
   header{
     position: relative;
-
+    width: 100%;
     .servicesJumboIMG{
       max-width: 88rem;
       width: 100%;
+      @media @mob500 {
+        display: none;
+      }
 
+    }
+    .servicesJumboIMG_mobile {
+      display: none;
+      @media @mob500 {
+        display: block;
+        max-width: 500px;
+        width: 100%;
+
+      }
     }
 
     #overText {
@@ -21,6 +33,9 @@
       z-index: 3;
      // overflow: hidden;
       display: none;
+      @media @mob500 {
+        top: 70%;
+      }
     }
 
   }
