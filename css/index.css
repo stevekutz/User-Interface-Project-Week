@@ -264,6 +264,7 @@ body {
   font-weight: bold;
   font-size: 2rem;
   color: #FFFFFF;
+  text-decoration: none;
 }
 .menu-container .menu-header .menu-control {
   cursor: pointer;
