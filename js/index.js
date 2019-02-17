@@ -25,8 +25,6 @@
 //  maintain positioning
 
 
-
-
 const resizeFloatText = () => {
 
   const text = document.querySelectorAll('#tagline');

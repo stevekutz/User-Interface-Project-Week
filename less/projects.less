@@ -1,0 +1,49 @@
+
+
+.projects-container {
+
+  header{
+    position: relative;
+    width: 100%;
+    .projectsJumboIMG{
+      .b_fg();
+      max-width: 88rem;
+      width: 100%;
+      @media @mob500 {
+        display: none;
+      }
+
+    }
+    .projectsJumboIMG_mobile {
+      display: none;
+      @media @mob500 {
+        display: block;
+        max-width: 500px;
+        width: 100%;
+
+      }
+    }
+
+    #overText {
+      .JumboHeader();
+      position: absolute;  // MUST BE HERE to position relative to parent
+      left: 6%;
+      top: 55%;  // use with relative
+      z-index: 3;
+      display: none;
+      @media @mob500 {
+        top: 70%;
+      }
+    }
+
+  } // end header
+
+
+
+
+
+
+
+
+
+} // end projects container

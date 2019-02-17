@@ -922,3 +922,123 @@ body {
 .services-container .tabbed-content .active {
   display: block;
 }
+.contact-container header {
+  position: relative;
+  width: 100%;
+}
+.contact-container header .contactJumboIMG {
+  border: 5px solid forestgreen;
+  max-width: 88rem;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .contact-container header .contactJumboIMG {
+    display: none;
+  }
+}
+.contact-container header .contactJumboIMG_mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .contact-container header .contactJumboIMG_mobile {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+  }
+}
+.contact-container header #overText {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #FFFFFF;
+  position: absolute;
+  left: 6%;
+  top: 55%;
+  z-index: 3;
+  display: none;
+}
+@media (max-width: 500px) {
+  .contact-container header #overText {
+    top: 70%;
+  }
+}
+.about-container header {
+  position: relative;
+  width: 100%;
+}
+.about-container header .aboutJumboIMG {
+  border: 5px solid forestgreen;
+  max-width: 88rem;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .about-container header .aboutJumboIMG {
+    display: none;
+  }
+}
+.about-container header .aboutJumboIMG_mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .about-container header .aboutJumboIMG_mobile {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+  }
+}
+.about-container header #overText {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #FFFFFF;
+  position: absolute;
+  left: 6%;
+  top: 55%;
+  z-index: 3;
+  display: none;
+}
+@media (max-width: 500px) {
+  .about-container header #overText {
+    top: 70%;
+  }
+}
+.projects-container header {
+  position: relative;
+  width: 100%;
+}
+.projects-container header .projectsJumboIMG {
+  border: 5px solid forestgreen;
+  max-width: 88rem;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .projects-container header .projectsJumboIMG {
+    display: none;
+  }
+}
+.projects-container header .projectsJumboIMG_mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .projects-container header .projectsJumboIMG_mobile {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+  }
+}
+.projects-container header #overText {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #FFFFFF;
+  position: absolute;
+  left: 6%;
+  top: 55%;
+  z-index: 3;
+  display: none;
+}
+@media (max-width: 500px) {
+  .projects-container header #overText {
+    top: 70%;
+  }
+}
