@@ -6,7 +6,6 @@
     position: relative;
     width: 100%;
     .contactJumboIMG{
-      .b_fg();
       max-width: 88rem;
       width: 100%;
       @media @mob500 {
@@ -39,7 +38,6 @@
   } // end header
 
   .contact-content{
-      .b_fg();
      .flex-row();
       align-items: flex-start;
       width: 90%;
@@ -48,16 +46,11 @@
         .flex-col();
       }
 
-
-
       .customerINPUT {
-        .b_gr();
         width: 50%;
-        display: flex;
-        flex-direction: column;
+        .flex-col();
         align-items: flex-start;
         @media @mob500 {
-
           width: 100%;
         }
 
@@ -68,9 +61,8 @@
         }
 
         .INPUT_email {
-          .b_msg();
-          .flex-col();
           width: 100%;
+          .flex-col();
           align-content: flex-start;
           margin-top: 1.5rem;
           .email_field{
@@ -79,22 +71,19 @@
             align-content: flex-start;
             width: 100%;
             label{
-              .emailText();
+              .contactText();
             }
             input{
-              .emailText();
+              .contactText();
               font-size: 1rem;
             }
           } // end email-field
-
-
           @media @mob500 {
             width: 100%;
             font-size: 1rem;
           }
-
           .email_promise {
-            .emailText();
+            .contactText();
             font-size: .75rem;
             padding: 0;
             font-weight: lighter;
@@ -102,76 +91,49 @@
         } // end INPUT_email
 
         .building_drop{
-         .b_msg();
           width: 100%;
           margin-top: 1rem;
           .flex-col();
           label{
-            .emailText();
+            .contactText();
           }
           select {
-
             width: 100%;
-            option {
-              width: 100%;
-            }
           }
-
-        }
+        } // end building_drop
 
         .overview {
           margin-top: 1.5rem;
           .message_field {
             label {
-              .emailText();
-
-
+              .contactText();
             }
             textarea {
               width: 100%;
               height: 7.5rem;
-
             }
-
-
           }
-
-
-
-        }
+        } // end overview
 
         .customer_size {
-          .b_msg();
-          align-content: flex-start;
           width: 100%;
           margin: 2rem 0;
           .radioBTN{
-
             .radio_BTN_fields{
-              .b_dp();
               width: 100%;
               .flex-row();
               justify-content: flex-start;
               flex-wrap: nowrap;
               input {
-                .b_dp();
-                width: 5%;
+                width: 6%;
               }
-
-
               label {
-                .b_lc();
-               .emailText();
-                width: 95%;
+               .contactText();
+                width: 94%;
               }
             }
-
-
           }
-
-
         } // end customer size
-
 
         .submit {
           width: 100%;
@@ -183,23 +145,14 @@
             &:hover {
               background-color: #5E9FB9;
             }
-
            @media @mob500 {
              width: 100%;
            }
           }
-
         }
-
-
-
       }  // end customerINPUT
 
-
-
-
       .work_locations{
-        .b_dp();
         .flex-row();
         justify-content: flex-end;
         width: 50%;
@@ -207,7 +160,6 @@
         @media @mob500 {
           width: 100%;
         }
-
 
         .locations_list{
           width: 80%;
@@ -218,8 +170,7 @@
           @media @mob500 {
             width: 100%;
           }
-          }
-
+          // start offices
           .offices {
             width: 100%;
             .flex-col();
@@ -246,7 +197,6 @@
                 .subHeader();
                 padding: 0;
                 margin: 0;
-
               }
 
               .address{
@@ -258,8 +208,6 @@
                   font-size: 1.25rem;
                   text-align: left;
                   @media @mob500 {
-
-
                   }
                 }
 
@@ -274,27 +222,11 @@
                   }
                 }
               }
-          } // end offices
-
-
-
+            } // end offices
+          } // end locations-list
         } //end locations_list
-
-
       } // end work_locations
 
     } // end contact-content
-
-
-
-
-
-
-
-
-
-
-
-
 
 } // end contact container

@@ -57,7 +57,7 @@
 					<input type="email" id="email_address" name="user_mail" placeholder = "      Enter email">
 				</div>
 				<h4 class = 'email_promise'>We'll never share your email with anyone else.</h4>
-			</div>
+			</div> <!-- end INPUT_email -->
 
 			<div class = 'building_drop'>
 				<label  for = 'building_amount'> How many buildings do you need planned?</label>
@@ -71,32 +71,35 @@
 					<option value='7'>7</option>
 				</select>
 
-			</div>
+			</div>  <!-- building dropdown -->
 
 			<div class = 'overview'>
 				<div class = "message_field">
 					<label for="msg">Provide a brief overview of you project needs</label>
 					<textarea id="msg" name="user_needs" placeholder=" enter details here"></textarea>
 				</div>
-			</div>
+			</div>   <!-- end overview -->
 
 			<div class = 'customer_size'>
 				<div class = "radioBTN">
 
 					<div class = "radio_BTN_fields">
-						<input type="radio" id="small_business" name="small_business" value="small_business">
+						<input type="radio" id="small_business" name="size" value="small_business">
 						<label for="small_business">I am a small business</label>
 					</div>
+
 					<div class = "radio_BTN_fields">
-						<input type="radio" id="residential" name="residential" value="residential">
+						<input type="radio" id="residential" name="size" value="residential">
 						<label for="residential">I am a residential planner</label>
 					</div>
+
 					<div class = "radio_BTN_fields">
-						<input type="radio" id="corporation" name="corporation" value="corporation">
+						<input type="radio" id="corporation" name="size" value="corporation">
 						<label for="corporation">I am a corporation</label>
 					</div>
+
 				</div>
-			</div>
+			</div>  <!-- end customer_size -->
 
 			<div class = "submit">
 				<button onclick="simpleAlert()">Submit</button>
@@ -208,8 +211,8 @@
 
 <script>
 	function simpleAlert() {
-		alert("does nothing but reset form! ");
-
+		alert("just resets (reloads) page ! ");
+		location.reload();
 	}
 
 </script>
