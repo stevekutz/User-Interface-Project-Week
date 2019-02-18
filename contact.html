@@ -45,8 +45,113 @@
 		<h1 id = 'overText'>
 			Contact Us
 		</h1>
-
 	</header>
+
+	<div class = 'contact-content'>
+		<section class = 'customerINPUT'>
+			<h2 class = 'INPUT_h2'> Get in Touch</h2>
+
+			<div class = 'INPUT_email'>
+				<div class = "email_field">
+					<label for="email_address">Email address </label>
+					<input type="email" id="email_address" name="user_mail" placeholder = "      Enter email">
+				</div>
+				<h4 class = 'email_promise'>We'll never share your email with anyone else.</h4>
+			</div>
+
+			<div class = 'building_drop'>
+				<label  for = 'building_amount'> How many buildings do you need planned?</label>
+				<select id = 'building_amount'>
+					<option value='1'>1</option>
+					<option value='2'>2</option>
+					<option value='3'>3</option>
+					<option value='4'>4</option>
+					<option value='5'>5</option>
+					<option value='6'>6</option>
+					<option value='7'>7</option>
+				</select>
+
+			</div>
+
+			<div class = 'overview'>
+				<div class = "message_field">
+					<label for="msg">Provide a brief overview of you project needs</label>
+					<textarea id="msg" name="user_needs" placeholder=" enter details here"></textarea>
+				</div>
+			</div>
+
+			<div class = 'customer_size'>
+				<div class = "radioBTN">
+
+					<div class = "radio_BTN_fields">
+						<input type="radio" id="small_business" name="small_business" value="small_business">
+						<label for="small_business">I am a small business</label>
+					</div>
+					<div class = "radio_BTN_fields">
+						<input type="radio" id="residential" name="residential" value="residential">
+						<label for="residential">I am a residential owner</label>
+					</div>
+					<div class = "radio_BTN_fields">
+						<input type="radio" id="corporation" name="corporation" value="corporation">
+						<label for="corporation">I am a corporation</label>
+					</div>
+				</div>
+			</div>
+
+			<div class = "submit">
+				<button onclick="simpleAlert()">Submit</button>
+			</div>
+
+
+		</section> <!-- end customerINPUT -->
+
+
+		<section class = 'work_locations'>
+			<div class = 'locations_list'>
+
+				<div class = 'offices'>
+					<div class = 'location'>
+						<h2 class = 'locations_h2'> Where We Work</h2>
+						<div class = 'address'>
+							<h3 class = 'h3_bold'>New York</h3>
+							<h3 class = 'h3_TXT'>123 Lane</h3>
+							<h3 class = 'h3_TXT'>Suite 100</h3>
+							<h3 class = 'h3_TXT'>Albany, NY 12345</h3>
+							<h3 class = 'h3_TXT'>202 555 0144</h3>
+						</div>
+					</div>
+
+					<div class = 'location'>
+						<div class = 'address'>
+							<h3 class = 'h3_bold'>Florida</h3>
+							<h3 class = 'h3_TXT'>Ocean Drive</h3>
+							<h3 class = 'h3_TXT'>Suite 201</h3>
+							<h3 class = 'h3_TXT'>Orlando, FL 22345</h3>
+							<h3 class = 'h3_TXT'>502 555 0144</h3>
+						</div>
+					</div>
+
+					<div class = 'location'>
+						<div class = 'address'>
+							<h3 class = 'h3_bold'>California</h3>
+							<h3 class = 'h3_TXT'>Mountain Street</h3>
+							<h3 class = 'h3_TXT'>Suite 105</h3>
+							<h3 class = 'h3_TXT'>San Diego, CA 22345</h3>
+							<h3 class = 'h3_TXT'>702 555 0144</h3>
+						</div>
+
+
+					</div>
+				</div>  <!-- end offices -->
+
+
+			</div>  <!-- end locations-list -->
+
+
+
+		</section>
+
+	</div>
 
 
 	<div class = 'footer'>
@@ -101,47 +206,9 @@
 
 </div>  <!-- end contact-container -->
 
-- Contact Us Content
-  Contact Us
-  
-Get In Touch
 
-Email Address
-Enter Email
-We'll never share your email with anyone else.
 
-How many buildings do you need planned?
-1-5
 
-Provide a brief overview of your project needs:
-
-I am a small business
-I am a residential owner
-I am a corporation
-
-Submit
-
-Where We Work
-
-New York
-123 Lane
-Suite 100
-Albany, NY 12345
-202 555 0144
-
-Florida
-Ocean Drive
-Suite 201
-Orlando, FL 22345
-502 555 0144
-
-California
-Mountain Street
-Suite 105
-San Diego, CA 22345
-702 555 0144
-
--->
 
 <!--	<script src="js/index.js"></script> -->
 </body>

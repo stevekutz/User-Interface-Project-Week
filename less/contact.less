@@ -27,7 +27,7 @@
     #overText {
       .JumboHeader();
       position: absolute;  // MUST BE HERE to position relative to parent
-      left: 6%;
+      left: 5%;
       top: 55%;  // use with relative
       z-index: 3;
       display: none;
@@ -37,6 +37,238 @@
     }
 
   } // end header
+
+  .contact-content{
+      .b_fg();
+     .flex-row();
+      align-items: flex-start;
+      width: 90%;
+      margin: 2rem auto;
+      .customerINPUT {
+      .b_gr();
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+ //       .flex-col();
+       align-items: flex-start;
+        .INPUT_h2{
+          .subHeader();
+          padding-left: 0;
+          width: 100%;
+        }
+
+        .INPUT_email {
+          .b_msg();
+          .flex-col();
+          width: 100%;
+          align-content: flex-start;
+          margin-top: 1.5rem;
+          .email_field{
+
+            .flex-col();
+            align-content: flex-start;
+            width: 100%;
+            label{
+              .emailText();
+            }
+            input{
+              .emailText();
+              font-size: 1rem;
+            }
+          } // end email-field
+
+
+          @media @mob500 {
+            width: 100%;
+            font-size: 1rem;
+          }
+
+          .email_promise {
+            .emailText();
+            font-size: .75rem;
+            padding: 0;
+            font-weight: lighter;
+          }
+        } // end INPUT_email
+
+        .building_drop{
+         .b_msg();
+          width: 100%;
+          margin-top: 1rem;
+          .flex-col();
+          label{
+            .emailText();
+          }
+          select {
+
+            width: 100%;
+            option {
+              width: 100%;
+            }
+          }
+
+        }
+
+        .overview {
+          margin-top: 1.5rem;
+          .message_field {
+            label {
+              .emailText();
+
+
+            }
+            textarea {
+              width: 100%;
+              height: 7.5rem;
+
+            }
+
+
+          }
+
+
+
+        }
+
+        .customer_size {
+          .b_msg();
+          align-content: flex-start;
+          width: 100%;
+          margin: 2rem 0;
+          .radioBTN{
+
+            .radio_BTN_fields{
+              .b_dp();
+              width: 100%;
+              .flex-row();
+              justify-content: flex-start;
+              flex-wrap: nowrap;
+              input {
+                .b_dp();
+                width: 10%;
+              }
+
+
+              label {
+                .b_lc();
+               .emailText();
+                width: 90%;
+              }
+            }
+
+
+          }
+
+
+        } // end customer size
+
+
+        .submit {
+          width: 100%;;
+          button {
+            background-color: white;
+            text-align: center;
+            width: 30%;
+            padding: .75rem;
+            &:hover {
+              background-color: #5E9FB9;
+            }
+
+          }
+
+        }
+
+
+
+      }  // end customerINPUT
+
+
+
+
+      .work_locations{
+        .b_dp();
+        .flex-row();
+        justify-content: flex-end;
+        width: 50%;
+        margin: 2.5rem 0;
+
+        .locations_list{
+          width: 80%;
+          .flex-col();
+          justify-content: flex-end;
+          margin: 0;
+          padding: 0;
+
+          }
+
+          .offices {
+            width: 100%;
+            .flex-col();
+            font-size: 1.15rem;
+            @media @mob500 {
+              .flex-col();
+              width: 100%;
+            }
+            .location{
+              .flex-col();
+              width: 80%;
+              @media @mob500 {
+                width: 100%;
+                margin: 0;
+                padding: .5rem 0;
+              }
+
+              .locations_h2{
+                width: 100%;
+                font-weight: bold;
+                font-size: 1.5rem;
+                color: @color;
+                text-align: left;
+                .subHeader();
+                padding: 0;
+                margin: 0;
+
+              }
+
+              .address{
+                width: 100%;
+                margin-top: 2rem;
+                .h3_bold{
+                  width: 100%;
+                  font-weight: bold;
+                  font-size: 1.25rem;
+                  text-align: left;
+                  @media @mob500 {
+
+
+                  }
+                }
+
+                .h3_TXT{
+                  width: 100%;
+                  font-size: 1rem;
+                  line-height: 1.5rem;
+                  font-weight: normal;
+                  text-align: left;
+                  @media @mob500 {
+                    line-height: 1.25rem;
+                  }
+                }
+              }
+          } // end offices
+
+
+
+        } //end locations_list
+
+
+      } // end work_locations
+
+    } // end contact-content
+
+
+
+
 
 
 
