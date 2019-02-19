@@ -24,18 +24,39 @@ const h1_lh = document.querySelector('.h1_lh');
 
 
 const resizeFloatText = () => {
+  const text = document.querySelector('#overText');
+    console.log('text gives  ', text);
 
-  const text = document.querySelectorAll('#overText');
-  const IMG = document.querySelectorAll('.projectsJumboIMG');
+  const IMG = document.querySelector('.projectsJumboIMG');
+  const img_height = IMG.height;
 
-  const img_height = IMG[0].height;
   const text_fontSize = (img_height * .23).toString() + 'px';
 
-  text[0].style.fontSize = text_fontSize;
-  text[0].style.lineHeight = text_fontSize;
-  text[0].style.display = 'block';
+  text.style.fontSize = text_fontSize;
+  text.style.lineHeight = text_fontSize;
+  text.style.display = 'block';
 
 };
 
-window.addEventListener('resize', () => resizeFloatText() );
+
+/*
+var text_ = document.querySelector('#overText');
+var IMG_ = document.querySelector('.projectsJumboIMG');
+
+//const resizer = (text_, IMG_) => {
+function resizer(text_, IMG_) {
+  const img_height = IMG.height;
+  const text_fontSize = (img_height * .23).toString() + 'px';
+
+  text.style.fontSize = text_fontSize;
+  text.style.lineHeight = text_fontSize;
+  text.style.display = 'block';
+
+}
+
+window.addEventListener('resize', () => resizer() );
+*/
+
+
+//window.addEventListener('resize', () => resizeFloatText() );
 window.addEventListener('load', () =>  resizeFloatText() );
