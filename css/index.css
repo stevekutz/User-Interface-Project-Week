@@ -1472,3 +1472,9 @@ body {
   margin: 5px;
   cursor: pointer;
 }
+.projects-container .carousel .carousel_nav_div .nav_div .nav_divBTN:hover {
+  border: 2px solid #5E9FB9;
+}
+.projects-container .carousel .carousel_nav_div .nav_div .active {
+  background: white;
+}
