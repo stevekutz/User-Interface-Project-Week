@@ -55,8 +55,16 @@ class Carousel {
     this.currentImage = this.carouselImages[this.currentIndex];
     this.currentImage.style.display = 'flex';
 
+
+
+
     // console.log(this.currentImage);
     // this.currentImage.style.transition;
+    const size = this.currentImage.clientWidth;
+    console.log('size is', size);
+
+
+     this.currentImage.style.transition = 'transform 60ms ease-in-out';
   }
 
 }
