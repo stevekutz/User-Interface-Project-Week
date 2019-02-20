@@ -6,7 +6,6 @@ class Carousel {
 
     this.carouselImages = carouselElement.querySelectorAll('img');
       console.log('this carousel images  ', this.carouselImages);
-
       console.log('length of this.carouseImages is ', this.carouselImages.length);
 
     this.currentIndex = 0;
@@ -55,16 +54,6 @@ class Carousel {
     this.currentImage = this.carouselImages[this.currentIndex];
     this.currentImage.style.display = 'flex';
 
-
-
-
-    // console.log(this.currentImage);
-    // this.currentImage.style.transition;
-    const size = this.currentImage.clientWidth;
-    console.log('size is', size);
-
-
-     this.currentImage.style.transition = 'transform 60ms ease-in-out';
   }
 
 }
