@@ -73,7 +73,7 @@ class NavButton {
     //  match BTN-info div to navBTN dataset value
     this.navBTN_content = document
       .querySelector(`.BTN-info[data-img = "${this.navBTN_data_img}"]`);
-      console.log('@@@@@@  this.navBTN.content is ', this.navBTN_content);
+      // console.log('@@@@@@  this.navBTN.content is ', this.navBTN_content);
 
 
 
@@ -84,13 +84,19 @@ class NavButton {
 
   selectNavBTN() {
     this.navBTN_content.toggleActiveNavBTN();
-      console.log('!!!!! this.navBTN is ', this.navBTN);
+      //console.log('!!!!! this.navBTN is ', this.navBTN);
 
     // toggle active nav control
     const navBTN_status = document.querySelectorAll('.nav_divBTN');
     [...navBTN_status].forEach(item => item.classList.remove('active'));
+    this.navBTN.classList.toggle('active');
 
-      this.navBTN.classList.toggle('active');
+    // exp
+    carousel.currentIndex = this.navBTN_data_img;
+    carousel.showImage();
+
+
+    console.log('######carousel current index is ', carousel.currentIndex);
 
 
   }
