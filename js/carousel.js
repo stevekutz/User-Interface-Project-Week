@@ -26,22 +26,44 @@ class Carousel {
   }
 
   left() {
+    navBTNs[this.currentIndex].classList.toggle('active');
+    btnInfoStatus[this.currentIndex].classList.toggle('active');
+
+    console.log('LLLLL  inside of left, currentIndex ORIGINALLY ', this.currentIndex);
+    console.log('LLL  Number(this.currentIndex) is ', Number(this.currentIndex)) ;
+    console.log('LLLLL  this.maxIndex is ', this.maxIndex);
+
+
     this.currentIndex === 0
       ? this.currentIndex = this.maxIndex
-      : this.currentIndex = this.currentIndex - 1;
+      : this.currentIndex = Number(this.currentIndex) - 1;
 
-      console.log('inside of left, currentIndex changed to ', this.currentIndex);
+       console.log('LLLLL inside of left, currentIndex changed to ', this.currentIndex);
+       console.log('LLLLL navBTNs is ', navBTNs);
+
+    navBTNs[this.currentIndex].classList.toggle('active');
+    btnInfoStatus[this.currentIndex].classList.toggle('active');
 
     this.showImage();
 
   }
 
   right() {
+    //  OMG this works !!
+    navBTNs[this.currentIndex].classList.toggle('active');
+    btnInfoStatus[this.currentIndex].classList.toggle('active');
+
+
     this.currentIndex === this.maxIndex
       ? this.currentIndex = 0
-      : this.currentIndex = this.currentIndex + 1;
+      : this.currentIndex = Number(this.currentIndex) + 1;
 
-      console.log('inside of right, currentIndex changed to ', this.currentIndex);
+       console.log('inside of right, currentIndex changed to ', this.currentIndex);
+       console.log('navBTNs is ', navBTNs);
+
+      //   OMG this works !!
+     navBTNs[this.currentIndex].classList.toggle('active');
+     btnInfoStatus[this.currentIndex].classList.toggle('active');
 
     this.showImage();
   }
@@ -80,7 +102,11 @@ class NavButton {
     this.navBTN_content = new NavInfoContent(this.navBTN_content);
 
     this.navBTN.addEventListener('click', () => this.selectNavBTN());
+
+
   }
+
+
 
   selectNavBTN() {
     this.navBTN_content.toggleActiveNavBTN();
@@ -91,7 +117,7 @@ class NavButton {
     [...navBTN_status].forEach(item => item.classList.remove('active'));
     this.navBTN.classList.toggle('active');
 
-    // exp
+    // set current index to currently selected data-img value
     carousel.currentIndex = this.navBTN_data_img;
     carousel.showImage();
 
@@ -122,5 +148,11 @@ class NavInfoContent {
 const navBTNs = document.querySelectorAll('.nav_divBTN');
   // console.log('navBTN QSA is ', navBTNs);
 
+
+navBTNStatus = Array.from(navBTNs);
+console.log('****** navBTNStatus', navBTNStatus);
+
+
 [...navBTNs].forEach(item => new NavButton(item) );
 
+const btnInfoStatus = document.querySelectorAll('.BTN-info');
