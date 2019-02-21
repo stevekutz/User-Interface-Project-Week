@@ -34,7 +34,7 @@ class Carousel {
     console.log('LLLLL  this.maxIndex is ', this.maxIndex);
 
 
-    this.currentIndex === 0
+    Number(this.currentIndex) === 0
       ? this.currentIndex = this.maxIndex
       : this.currentIndex = Number(this.currentIndex) - 1;
 
@@ -53,8 +53,8 @@ class Carousel {
     navBTNs[this.currentIndex].classList.toggle('active');
     btnInfoStatus[this.currentIndex].classList.toggle('active');
 
-
-    this.currentIndex === this.maxIndex
+    // had to use Number here to get indices to do wrap around with corner case
+    Number(this.currentIndex) === this.maxIndex
       ? this.currentIndex = 0
       : this.currentIndex = Number(this.currentIndex) + 1;
 
