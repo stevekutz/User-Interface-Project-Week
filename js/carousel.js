@@ -64,7 +64,7 @@ let carousel = new Carousel(carouselDOM);
 class NavButton {
   constructor(navBTN_attrib) {
     this.navBTN = navBTN_attrib;  // entire nav_divBTN div for each img
-      //console.log('++++++  navTBN created with attr of ', this.navBTN);
+      console.log('++++++  navTBN created with attr of ', this.navBTN);
 
     // dataset attribute for navBTN  - DOMStringMap
     this.navBTN_data_img = this.navBTN.dataset.img;
@@ -75,40 +75,39 @@ class NavButton {
       .querySelector(`.BTN-info[data-img = "${this.navBTN_data_img}"]`);
       console.log('@@@@@@  this.navBTN.content is ', this.navBTN_content);
 
+
+
     this.navBTN_content = new NavInfoContent(this.navBTN_content);
 
-
     this.navBTN.addEventListener('click', () => this.selectNavBTN());
-
-
   }
 
   selectNavBTN() {
-
     this.navBTN_content.toggleActiveNavBTN();
+      console.log('!!!!! this.navBTN is ', this.navBTN);
+
+    // toggle active nav control
+    const navBTN_status = document.querySelectorAll('.nav_divBTN');
+    [...navBTN_status].forEach(item => item.classList.remove('active'));
+
+      this.navBTN.classList.toggle('active');
+
 
   }
-
-
 }
 
 
 class NavInfoContent {
   constructor(navData){
-
     this.navInfo = navData;
-
   }
 
   toggleActiveNavBTN() {
-
     const btnInfo = document.querySelectorAll('.BTN-info');
     [...btnInfo].forEach( item => item.classList.remove('active') );
 
     this.navInfo.classList.toggle('active');
-
   }
-
 }
 
 
