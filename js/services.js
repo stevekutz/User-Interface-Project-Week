@@ -56,12 +56,12 @@ class Button{
 
     // get dataset attribute  (e.g. pre-construction, ...)
     this.BTN_dataset = this.BTN.dataset.tab;
-       // console.log('data-tab value is ', this.BTN_dataset);
+        console.log('******data-tab value is ', this.BTN_dataset);
 
     // get the entire .tab-info div that matches BTN_dataset value
     this.BTN_content = document
       .querySelector(`.tab-info[data-tab = '${this.BTN_dataset}']`);
-       // console.log('this.BTN_content div is ', this.BTN_content);
+       console.log('this.BTN_content div is ', this.BTN_content);
 
     // create component class to handle all data content of BTN_content
     this.BTN_content = new ButtonInfo(this.BTN_content);
