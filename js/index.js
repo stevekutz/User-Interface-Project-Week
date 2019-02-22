@@ -38,3 +38,11 @@ const resizeFloatText = () => {
 window.addEventListener('resize', () => resizeFloatText() );
 
 window.addEventListener('load', () =>  resizeFloatText() );
+
+
+const debugVar = document.querySelector('.debug_var');
+const sloganText = document.querySelector('#tagline');
+
+
+sloganText.addEventListener('dblclick', () => debugVar.classList.toggle('active') );
+

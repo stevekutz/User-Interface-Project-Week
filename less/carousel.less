@@ -1,5 +1,4 @@
 .carousel {
-
   .flex-row();
   max-width: 880px;
   max-height: 585px;
@@ -8,7 +7,9 @@
   position: relative;
   overflow: hidden;
   margin: 2rem 0;
-
+  @media @mob500 {
+    max-height: 290px;
+  }
   .left-button, .right-button {
     .flex-col();
     padding-bottom: .25rem;
@@ -46,7 +47,6 @@
   }
 
   .carousel_nav_div{
-    .b_db();
     position: absolute;
     z-index: 4;
     bottom: 0;
@@ -56,13 +56,11 @@
     .flex-row();
     justify-content: center;
     .nav_div{
-      .b_msg();
       .flex-row();
       justify-content: center;
       width: 70%;
       height: 50px;
       .nav_divBTN{
-        .b_dp();
         display: flex;
         width: 30px;
         height: 30px;

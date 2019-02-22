@@ -6,7 +6,6 @@
     position: relative;
     width: 100%;
     .projectsJumboIMG{
-      .b_fg();
       max-width: 88rem;
       width: 100%;
       @media @mob500 {
@@ -39,16 +38,11 @@
   } // end header
 
   .project-BTNcontent {
-    .b_fg();
-
     .BTN-info{
-      .b_dp();
        display: none;
-   //   .flex-col();
        margin: 2rem 0;
 
       .BTN_h2{
-        .b_rb();
         .JumboHeader();
         width: 100%;
         color: #5E9FB9;
@@ -56,7 +50,6 @@
       }
 
       .BTN-txt {
-        .b_msg();
         width: 96%;
         .BTN_p{
           .b_gr();
@@ -65,13 +58,18 @@
         }
       }
       .BTN_slide_extra_content {
-        .b_fg();
         width: 96%;
         .flex-row();
+        @media @mob500{
+          .flex-col();
+        }
+
         .BTN_slide_extra {
-          .b_dp();
           width: 32%;
           .flex-row();
+          @media @mob500 {
+            width: 96%;
+          }
           .BTN_slide_h3{
             width: 100%;
             .SlideHeader();
@@ -82,7 +80,6 @@
             }
           }
           .BTN_slide_p {
-            .b_gr();
             width: 100%;
             .genText();
             padding: 1rem;
