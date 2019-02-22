@@ -6,7 +6,6 @@
     position: relative;
     width: 100%;
     .aboutJumboIMG{
-      .b_fg();
       max-width: 88rem;
       width: 100%;
       @media @mob500 {
@@ -38,24 +37,89 @@
 
   } // end header
 
-  .aboutINFO {
-    .b_db();
-    .flex-col();
-    width: 90%;
-    margin: 0 auto;
+  .about-content {
+    .flex-row();
+
+    .aboutINFO {
+      .flex-col();
+      width: 90%;
+      margin: 0 auto;
+
+      .team {
+        margin: 2rem 0;
+        .flex-row();
+        @media @mob500{
+          .flex-col();
+        }
 
 
-    .teamIMG{
-      width: 40%;
-      .teamPIC{
-        max-width: 600px;
-        width: 100%;
+        .bio {
+          .flex-col();
+          width: 40%;
+          padding: 1rem;
+          @media @mob500{
+            width: 100%;
+          }
+          h2 {
+            .SlideHeader();
+            color: black;
+          }
+          p {
+            .contactText();
+          }
+        }
+
+
+        .teamIMG{
+          width: 60%;
+          @media @mob500 {
+            width: 100%;
+          }
+          .teamPIC{
+            max-height: 400px;
+            width: 100%;
+
+          }
+        }
+
+     } // end team
+
+      .left {
+        .bio {
+          order: 1;
+        }
+        .teamIMG {
+          order: 2;
+        }
+        @media @mob500 {
+          .bio {
+            order: 2;
+          }
+          .teamIMG {
+            order: 1;
+          }
+
+        }
+
+
+      }
+
+      .right {
+        .bio {
+          order: 2;
+        }
+        .teamIMG {
+          order: 1;
+        }
       }
 
     }
 
 
+
   }
+
+
 
 
 

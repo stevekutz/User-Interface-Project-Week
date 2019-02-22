@@ -666,7 +666,6 @@ body {
   width: 100%;
 }
 .footer .footer-content {
-  border: 5px solid forestgreen;
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -688,7 +687,6 @@ body {
   }
 }
 .footer .footer-content .email {
-  border: 3px solid rebeccapurple;
   width: 35%;
   padding: 2rem 0;
   text-align: left;
@@ -1386,7 +1384,6 @@ body {
   width: 100%;
 }
 .about-container header .aboutJumboIMG {
-  border: 5px solid forestgreen;
   max-width: 88rem;
   width: 100%;
 }
@@ -1421,8 +1418,14 @@ body {
     top: 70%;
   }
 }
-.about-container .aboutINFO {
-  border: 3px solid dodgerblue;
+.about-container .about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.about-container .about-content .aboutINFO {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1432,12 +1435,86 @@ body {
   width: 90%;
   margin: 0 auto;
 }
-.about-container .aboutINFO .teamIMG {
-  width: 40%;
+.about-container .about-content .aboutINFO .team {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
-.about-container .aboutINFO .teamIMG .teamPIC {
-  max-width: 600px;
+@media (max-width: 500px) {
+  .about-container .about-content .aboutINFO .team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+}
+.about-container .about-content .aboutINFO .team .bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 40%;
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  .about-container .about-content .aboutINFO .team .bio {
+    width: 100%;
+  }
+}
+.about-container .about-content .aboutINFO .team .bio h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #5E9FB9;
+  padding: 1rem;
+  text-align: center;
+  color: black;
+}
+.about-container .about-content .aboutINFO .team .bio p {
   width: 100%;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: 0.5rem 0;
+}
+.about-container .about-content .aboutINFO .team .teamIMG {
+  width: 60%;
+}
+@media (max-width: 500px) {
+  .about-container .about-content .aboutINFO .team .teamIMG {
+    width: 100%;
+  }
+}
+.about-container .about-content .aboutINFO .team .teamIMG .teamPIC {
+  max-height: 400px;
+  width: 100%;
+}
+.about-container .about-content .aboutINFO .left .bio {
+  order: 1;
+}
+.about-container .about-content .aboutINFO .left .teamIMG {
+  order: 2;
+}
+@media (max-width: 500px) {
+  .about-container .about-content .aboutINFO .left .bio {
+    order: 2;
+  }
+  .about-container .about-content .aboutINFO .left .teamIMG {
+    order: 1;
+  }
+}
+.about-container .about-content .aboutINFO .right .bio {
+  order: 2;
+}
+.about-container .about-content .aboutINFO .right .teamIMG {
+  order: 1;
 }
 .projects-container header {
   position: relative;
