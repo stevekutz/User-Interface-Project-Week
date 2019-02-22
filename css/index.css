@@ -220,6 +220,7 @@ table {
   line-height: 2.5rem;
   color: #5E9FB9;
   padding: 1rem;
+  text-align: center;
 }
 .subHeader {
   font-weight: bold;
@@ -1398,7 +1399,7 @@ body {
   color: #FFFFFF;
   position: absolute;
   left: 5%;
-  top: 55%;
+  top: 69%;
   z-index: 3;
   display: none;
 }
@@ -1514,11 +1515,13 @@ body {
   flex-wrap: wrap;
 }
 .projects-container .project-BTNcontent .BTN-info .BTN_slide_extra_content .BTN_slide_extra .BTN_slide_h3 {
+  width: 100%;
   font-weight: bold;
   font-size: 2rem;
   line-height: 2.5rem;
   color: #5E9FB9;
   padding: 1rem;
+  text-align: center;
 }
 .projects-container .project-BTNcontent .BTN-info .BTN_slide_extra_content .BTN_slide_extra .extraIMG img {
   width: 100%;
