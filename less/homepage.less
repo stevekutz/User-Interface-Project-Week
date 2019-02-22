@@ -1,0 +1,267 @@
+// just for debugging element size attribute on resize
+.debug_var{
+  .debug_elem();
+}
+
+.main-container{
+  height: auto;
+  .flex-col();
+
+
+
+  header {
+    width: 100%;
+    position: relative; //  MUST BE HERE to make children position
+    .homeJumboIMG{
+      max-width: 88rem;
+      width: 100%;
+      @media @mob500{
+        display: none;
+      }
+
+
+    }
+    .homeJumboIMG_mobile{
+      display: none;
+      @media @mob500{
+        max-width: 500px;
+        width: 100%;
+        display: block;
+      }
+
+    }
+
+
+  }
+
+
+  #tagline{
+    .JumboHeader();
+    position: absolute;  // MUST BE HERE to position relative to parent
+    left: 5%;
+    top: 55%;  // use with relative
+    z-index: 3;
+    display: none;
+    @media @mob500{
+      top: 40%;
+      font-size: .25rem;
+    }
+  }
+
+  .top{
+    width: 90%;
+    @media @mob500 {
+      width: 90%;
+    }
+
+    .top-content{
+      .flex-row();
+      padding: 2rem 0;
+      @media @mob500 {
+        .flex-col();
+        width: 100%;
+        padding: 0;
+        margin-top: 1rem;
+      }
+
+      .top-text{
+        .background();
+        padding: 1rem;
+        width: 50%;
+        @media @mob500 {
+          .flex-col();
+          width: 100%;
+          padding: 0;
+        }
+        .top-h2{
+          .subHeader();
+          @media @mob500{
+            width: 90%;
+            padding: 1rem 0;
+            margin: 0 auto;
+          }
+        }
+        .top-p{
+          .genText();
+          @media @mob500{  ;
+            width: 90%;
+            margin: 0 auto;
+            padding: 0;
+          }
+        }
+        .btn{
+          .Button();
+          @media @mob500 {
+            width: 90%;
+            margin: 1rem auto;
+          }
+        }
+      }
+
+      .topIMG{
+        width: 50%;
+        @media @mob500 {
+          width: 90%;
+          margin: 0;
+          padding: 0;
+          order: 0;
+        }
+        .desktop {
+          max-width: 410px;
+          width: 100%;
+          @media @mob500 {
+            display: none;
+          }
+        }
+        .mob500{
+          display: none;
+          @media @mob500 {
+            max-width: 390px;
+            width: 100%;
+            display: block;
+          }
+
+        }
+
+      } // end topIMG
+
+    } // end top-content
+
+
+
+    .imgRight{
+      .top-text{
+        order: 1;
+        @media @mob500{
+          order: 2;
+        }
+      }
+      .topIMG{
+        order: 2;
+        @media @mob500{
+          order: 1;
+        }
+      }
+    }
+
+    .imgLeft {
+      .top-text{
+        order: 2;
+      }
+      .topIMG{
+        order: 1;
+      }
+    }
+
+
+  }  // end top
+
+  .middle {
+    width: 90%;
+    margin-top: 2rem;
+    .middle-h2{
+      .subHeader();
+      padding-left: 0;
+    }
+    .middle-content{
+      .middleIMG{
+        padding: 1rem 0;
+        position: relative;   // MUST BE IN PARENT
+        .desktop {
+          max-width: 855px;
+          width: 100%;
+          @media @mob500 {
+            display: none;
+          }
+        }
+        .mob500{
+          display: none;
+          @media @mob500 {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+          }
+
+        }
+
+
+
+        .floatBLOCK{
+          position: absolute;   // MUST BE IN CHILD
+          bottom: -.5rem;
+          width: 25%;
+          .floatBLOCK_p{
+            .genText();
+            background-color: @recentProjectsGraysquare;
+            padding: 1rem 0;
+
+            text-align: center;
+          }
+          @media @mob500 {
+            width: 95%;
+
+
+          }
+        }
+      }
+      .middle-text{
+        .flex-col();
+        margin: 1rem 0;
+        padding-bottom: 2rem;
+        .middle-p{
+          width: 50%;
+          .genText();
+          @media @mob500 {
+            width: 100%;
+            margin: 0;
+            padding: .5rem;
+
+          }
+        }
+      }
+
+    }  // end middle content
+
+    // position those floating blocks !!!
+    .blockRight .middleIMG .floatBLOCK{
+      right: 0;
+      @media @mob500 {
+        left: 0;
+        right: 0;
+        width: auto;  // takes 100% space
+        padding: 0 2.5%; // centers nicely
+      }
+    }
+
+    .blockLeft .middleIMG .floatBLOCK{
+      left: 0;
+      @media @mob500{
+        left: 0;
+        right: 0;
+        width: auto;
+        padding: 0 2.5%;
+      }
+
+    }
+  }  // end middle
+
+
+  // just for debugging
+  .debug_var{
+    .IMG_size, .h1_size, .h1_fontSize, .h1_lh {
+      font-size: 2rem;
+    }
+    display: none;
+
+  }
+  .active{
+    .flex-col();
+  }
+
+
+
+
+
+}
+
+// refer to footer.LESS

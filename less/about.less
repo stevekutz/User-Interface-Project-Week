@@ -1,0 +1,130 @@
+
+
+.about-container {
+
+  header{
+    position: relative;
+    width: 100%;
+    .aboutJumboIMG{
+      max-width: 88rem;
+      width: 100%;
+      @media @mob500 {
+        display: none;
+      }
+
+    }
+    .aboutJumboIMG_mobile {
+      display: none;
+      @media @mob500 {
+        display: block;
+        max-width: 500px;
+        width: 100%;
+
+      }
+    }
+
+    #overText {
+      .JumboHeader();
+      position: absolute;  // MUST BE HERE to position relative to parent
+      left: 5%;
+      top: 69%;  // use with relative
+      z-index: 3;
+      display: none;
+      @media @mob500 {
+        top: 70%;
+      }
+    }
+
+  } // end header
+
+  .about-content {
+    .flex-row();
+
+    .aboutINFO {
+      .flex-col();
+      width: 90%;
+      margin: 0 auto;
+
+      .team {
+        margin: 2rem 0;
+        .flex-row();
+        @media @mob500{
+          .flex-col();
+        }
+
+
+        .bio {
+          .flex-col();
+          width: 40%;
+          padding: 1rem;
+          @media @mob500{
+            width: 100%;
+          }
+          h2 {
+            .SlideHeader();
+            color: black;
+          }
+          p {
+            .contactText();
+          }
+        }
+
+
+        .teamIMG{
+          width: 60%;
+          @media @mob500 {
+            width: 100%;
+          }
+          .teamPIC{
+            max-height: 400px;
+            width: 100%;
+
+          }
+        }
+
+     } // end team
+
+      .left {
+        .bio {
+          order: 1;
+        }
+        .teamIMG {
+          order: 2;
+        }
+        @media @mob500 {
+          .bio {
+            order: 2;
+          }
+          .teamIMG {
+            order: 1;
+          }
+
+        }
+
+
+      }
+
+      .right {
+        .bio {
+          order: 2;
+        }
+        .teamIMG {
+          order: 1;
+        }
+      }
+
+    }
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+} // end about container

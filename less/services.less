@@ -1,0 +1,163 @@
+
+
+.services-container{
+
+  header{
+    position: relative;
+    width: 100%;
+    .servicesJumboIMG{
+      max-width: 88rem;
+      width: 100%;
+      @media @mob500 {
+        display: none;
+      }
+
+    }
+    .servicesJumboIMG_mobile {
+      display: none;
+      @media @mob500 {
+        display: block;
+        max-width: 500px;
+        width: 100%;
+
+      }
+    }
+
+    #overText {
+      .JumboHeader();
+      position: absolute;  // MUST BE HERE to position relative to parent
+      left: 5%;
+      top: 55%;  // use with relative
+      z-index: 3;
+      display: none;
+      @media @mob500 {
+        top: 70%;
+      }
+    }
+
+  } // end header
+
+  .services-content{
+    .flex-col();
+    width: 90%;
+    margin: 0 auto;
+    .topContent {
+      .services-text{
+        .genText();
+        padding: 2rem 0;
+      }
+
+    }
+
+
+  }  // end services-content
+
+  .tabbed-content{
+    .flex-col();
+    .tab_BTN-container{
+      width: 100%;
+      .flex-row();
+      padding: 1rem 0;
+      .tab_BTN{
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        border: 1px solid black;
+        padding: .5rem .25rem;
+        &:hover{
+          color: white;
+          background-color: #5E9FB9;
+        }
+        @media @mob500 {
+          width: 100%;
+          padding: .75rem 0;
+          margin: .5rem 0;
+        }
+      } // end tab_BTN
+
+      @media @mob500 {
+       .flex-col();
+
+
+     }
+
+
+    } // end tab_BTN_container
+
+
+
+    .tab-info{
+      .flex-col();
+      margin: 2rem 0;
+      display: none;
+
+      .tab_h2{
+        width: 100%;
+        font-size: 2rem;
+        font-weight: bold;
+         text-align: left;
+       }
+
+      .tab-data{
+        .flex-row();
+        .tab-text{
+          width: 50%;
+          .flex-col();
+
+          .tab_p{
+            .genText();
+            padding: .5rem 0;
+          }
+          @media @mob500 {
+            width: 100%;
+          }
+        }
+
+        .tabIMG{
+          width: 50%;
+          @media @mob500 {
+            width: 100%;
+          }
+          .desktop{
+            max-width: 480px;
+            width: 100%;
+            @media @mob500 {
+              display: none;
+            }
+          }
+          .mobile{
+            display: none;
+            @media @mob500 {
+              max-width: 600px;
+              width: 100%;
+              display: block;
+            }
+          }
+        }
+
+      }
+
+
+    } // end of tab-info
+
+    .active {
+      display: block;
+
+    }
+
+  }
+
+
+// just for debugging
+.IMG_size, .h1_size, .h1_fontSize, .h1_lh {
+  font-size: 2rem;
+}
+
+
+} // end services-container
+
+// refer to footer.LESS
+
+
+
+

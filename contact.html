@@ -2,60 +2,223 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Contact Us</title>
+	<title>Contact</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">
 	<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<script defer="defer" src="js/navigation.js"></script>
+	<script defer = 'defer' src = 'js/contact.js'></script>
+
 </head>
 
+
 <body>
+<div class = 'menu-container'>
+	<div class = 'menu-header'>
+		<a class = 'menu-title' href = 'index.html'> S&J </a>
+		<div class = 'menu-control'>
+			<img src = './img/nav-hamburger-open.png' class = 'burger open' alt = 'hamburger'/>
+			<img src = './img/nav-hamburger-close.png' class = 'Xchar closed' alt = 'X'/>
+		</div>
+	</div> <!-- end menu-header -->
 
-	<h1>Contact</h1>
+	<div class = 'menu-content hidden'>
+		<a class = 'menu-item' href = 'index.html'> Home </a>
+		<a class = 'menu-item' href = 'services.html'> Services</a>
+		<a class = 'menu-item' href = 'projects.html'> Projects </a>
+		<a class = 'menu-item' href = 'contact.html'> Contact </a>
+		<a class = 'menu-item' href = 'about.html'> About </a>
+	</div>
 
-<!-- Contactd Us Content 
-  Contact Us
-  
-Get In Touch
 
-Email Address
-Enter Email
-We'll never share your email with anyone else.
 
-How many buildings do you need planned?
-1-5
+</div> <!-- menu container -->
 
-Provide a brief overview of your project needs:
+<div class = 'contact-container'>
 
-I am a small business
-I am a residential owner
-I am a corporation
+	<header>
+		<img src = './img/contact/contact-jumbotron.png'  class = 'contactJumboIMG' alt = 'header image'/>
+		<img src = './img/contact/contact-mobile-jumbotron.png' class = 'contactJumboIMG_mobile' alt = 'header image'/>
 
-Submit
+		<h1 id = 'overText'>
+			Contact Us
+		</h1>
+	</header>
 
-Where We Work
+	<div class = 'contact-content'>
+		<section class = 'customerINPUT'>
+			<h2 class = 'INPUT_h2'> Get in Touch</h2>
 
-New York
-123 Lane
-Suite 100
-Albany, NY 12345
-202 555 0144
+			<div class = 'INPUT_email'>
+				<div class = "email_field">
+					<label for="email_address">Email address </label>
+					<input type="email" id="email_address" name="user_mail" placeholder = "      Enter email">
+				</div>
+				<h4 class = 'email_promise'>We'll never share your email with anyone else.</h4>
+			</div> <!-- end INPUT_email -->
 
-Florida
-Ocean Drive
-Suite 201
-Orlando, FL 22345
-502 555 0144
+			<div class = 'building_drop'>
+				<label  for = 'building_amount'> How many buildings do you need planned?</label>
+				<select id = 'building_amount'>
+					<option value='1'>1</option>
+					<option value='2'>2</option>
+					<option value='3'>3</option>
+					<option value='4'>4</option>
+					<option value='5'>5</option>
+					<option value='6'>6</option>
+					<option value='7'>7</option>
+				</select>
 
-California
-Mountain Street
-Suite 105
-San Diego, CA 22345
-702 555 0144
+			</div>  <!-- building dropdown -->
 
--->
+			<div class = 'overview'>
+				<div class = "message_field">
+					<label for="msg">Provide a brief overview of you project needs</label>
+					<textarea id="msg" name="user_needs" placeholder=" enter details here"></textarea>
+				</div>
+			</div>   <!-- end overview -->
 
-	<script src="js/index.js"></script>
+			<div class = 'customer_size'>
+				<div class = "radioBTN">
+
+					<div class = "radio_BTN_fields">
+						<input type="radio" id="small_business" name="size" value="small_business">
+						<label for="small_business">I am a small business</label>
+					</div>
+
+					<div class = "radio_BTN_fields">
+						<input type="radio" id="residential" name="size" value="residential">
+						<label for="residential">I am a residential planner</label>
+					</div>
+
+					<div class = "radio_BTN_fields">
+						<input type="radio" id="corporation" name="size" value="corporation">
+						<label for="corporation">I am a corporation</label>
+					</div>
+
+				</div>
+			</div>  <!-- end customer_size -->
+
+			<div class = "submit">
+				<button onclick="simpleAlert()">Submit</button>
+			</div>
+
+
+		</section> <!-- end customerINPUT -->
+
+
+		<section class = 'work_locations'>
+			<div class = 'locations_list'>
+
+				<div class = 'offices'>
+					<div class = 'location'>
+						<h2 class = 'locations_h2'> Where We Work</h2>
+						<div class = 'address'>
+							<h3 class = 'h3_bold'>New York</h3>
+							<h3 class = 'h3_TXT'>123 Lane</h3>
+							<h3 class = 'h3_TXT'>Suite 100</h3>
+							<h3 class = 'h3_TXT'>Albany, NY 12345</h3>
+							<h3 class = 'h3_TXT'>202 555 0144</h3>
+						</div>
+					</div>
+
+					<div class = 'location'>
+						<div class = 'address'>
+							<h3 class = 'h3_bold'>Florida</h3>
+							<h3 class = 'h3_TXT'>Ocean Drive</h3>
+							<h3 class = 'h3_TXT'>Suite 201</h3>
+							<h3 class = 'h3_TXT'>Orlando, FL 22345</h3>
+							<h3 class = 'h3_TXT'>502 555 0144</h3>
+						</div>
+					</div>
+
+					<div class = 'location'>
+						<div class = 'address'>
+							<h3 class = 'h3_bold'>California</h3>
+							<h3 class = 'h3_TXT'>Mountain Street</h3>
+							<h3 class = 'h3_TXT'>Suite 105</h3>
+							<h3 class = 'h3_TXT'>San Diego, CA 22345</h3>
+							<h3 class = 'h3_TXT'>702 555 0144</h3>
+						</div>
+
+
+					</div>
+				</div>  <!-- end offices -->
+
+
+			</div>  <!-- end locations-list -->
+
+
+
+		</section>
+
+	</div>
+
+
+	<div class = 'footer'>
+
+		<div class = 'footer-content'>
+			<div class = 'email'>
+				<h3 class = 'footer_bold'> Interested in starting a project? </h3>
+				<h3 class = 'footer_bold'>Let’s talk:</h3>
+				<div class = 'emailBTN'> Enter email </div>
+				<h4>We'll never share your email with anyone else.</h4>
+			</div>
+
+			<div class = 'offices'>
+				<div class = 'location'>
+					<h3 class = 'footer_bold'>New York</h3>
+					<h3 class = 'footerTXT'>123 Lane</h3>
+					<h3 class = 'footerTXT'>Suite 100</h3>
+					<h3 class = 'footerTXT'>Albany, NY 12345</h3>
+					<h3 class = 'footerTXT'>202 555 0144</h3>
+				</div>
+
+				<div class = 'location'>
+					<h3 class = 'footer_bold'>Florida</h3>
+					<h3 class = 'footerTXT'>Ocean Drive</h3>
+					<h3 class = 'footerTXT'>Suite 201</h3>
+					<h3 class = 'footerTXT'>Orlando, FL 22345</h3>
+					<h3 class = 'footerTXT'>502 555 0144</h3>
+				</div>
+
+				<div class = 'location'>
+					<h3 class = 'footer_bold'>California</h3>
+					<h3 class = 'footerTXT'>Mountain Street</h3>
+					<h3 class = 'footerTXT'>Suite 105</h3>
+					<h3 class = 'footerTXT'>San Diego, CA 22345</h3>
+					<h3 class = 'footerTXT'>702 555 0144</h3>
+				</div>
+			</div>  <!-- end offices -->
+
+
+		</div>  <!-- end footer-content -->
+
+
+
+
+		<div class = 'copyright'>
+			<p class = 'footer_p'>Copyright © 2018 Smith and Jones</p>
+		</div>
+
+	</div>  <!-- end footer -->
+
+
+
+</div>  <!-- end contact-container -->
+
+<script>
+	function simpleAlert() {
+		alert("just resets (reloads) page ! ");
+		location.reload();
+	}
+
+</script>
+
+
+
+<!--	<script src="js/index.js"></script> -->
 </body>
 </html>

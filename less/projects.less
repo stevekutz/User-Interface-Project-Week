@@ -1,0 +1,107 @@
+
+
+.projects-container {
+
+  header{
+    position: relative;
+    width: 100%;
+    .projectsJumboIMG{
+      max-width: 88rem;
+      width: 100%;
+      @media @mob500 {
+        display: none;
+      }
+
+    }
+    .projectsJumboIMG_mobile {
+      display: none;
+      @media @mob500 {
+        display: block;
+        max-width: 500px;
+        width: 100%;
+
+      }
+    }
+
+    #overText {
+      .JumboHeader();
+      position: absolute;  // MUST BE HERE to position relative to parent
+      left: 5%;
+      top: 52%;  // use with relative
+      z-index: 3;
+      display: none;
+      @media @mob500 {
+        top: 70%;
+      }
+    }
+
+  } // end header
+
+  .project-BTNcontent {
+    .BTN-info{
+       display: none;
+       margin: 2rem 0;
+
+      .BTN_h2{
+        .JumboHeader();
+        width: 100%;
+        color: #5E9FB9;
+        text-align: center;
+      }
+
+      .BTN-txt {
+        width: 96%;
+        .BTN_p{
+          .genText();
+          padding: 1rem 0;
+        }
+      }
+      .BTN_slide_extra_content {
+        width: 96%;
+        .flex-row();
+        align-items: flex-start;
+  //      align-content: flex-start;
+        @media @mob500{
+          .flex-col();
+        }
+
+        .BTN_slide_extra {
+          width: 32%;
+          .flex-col();
+          @media @mob500 {
+            width: 96%;
+          }
+          .BTN_slide_h3{
+            width: 100%;
+            .SlideHeader();
+          }
+          .extraIMG{
+            img {
+              width: 100%;
+            }
+          }
+          .BTN_slide_p {
+            width: 100%;
+            .genText();
+            padding: 1rem;
+          }
+        } // end BTN_slide_extra
+      }
+
+
+
+    }  // BTN-info
+
+    .active{
+      .flex-col();
+
+    }
+
+  }
+
+
+
+
+
+
+} // end projects container
