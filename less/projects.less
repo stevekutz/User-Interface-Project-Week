@@ -52,7 +52,6 @@
       .BTN-txt {
         width: 96%;
         .BTN_p{
-          .b_gr();
           .genText();
           padding: 1rem 0;
         }
@@ -60,13 +59,15 @@
       .BTN_slide_extra_content {
         width: 96%;
         .flex-row();
+        align-items: flex-start;
+  //      align-content: flex-start;
         @media @mob500{
           .flex-col();
         }
 
         .BTN_slide_extra {
           width: 32%;
-          .flex-row();
+          .flex-col();
           @media @mob500 {
             width: 96%;
           }
